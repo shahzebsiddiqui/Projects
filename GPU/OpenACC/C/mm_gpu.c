@@ -18,7 +18,7 @@ int main(int argc, char* argv[])
 	Y[i] = malloc(sizeof(double)*N);
 	Z[i] = malloc(sizeof(double)*N);
   }
-  #pragma acc create(X[0:N][0:N],Y[0:N][0:N],Z[0:N][0:N])
+  #pragma acc declare create(X[0:N][0:N],Y[0:N][0:N],Z[0:N][0:N])
   for (i = 0; i < N; i++)
   {
 	for (j = 0; j < N; j++)

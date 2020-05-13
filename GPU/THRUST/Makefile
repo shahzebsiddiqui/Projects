@@ -1,6 +1,6 @@
 CC = nvcc
 CFLAGS = -O3
-BIN = cublas grades norm vecAdd vecOp_tuple
+BIN = cublas grades vecAdd vecOp_tuple
 
 all: $(BIN)
 
